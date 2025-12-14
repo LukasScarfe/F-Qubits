@@ -1,1 +1,1 @@
-This is a repository to further develop the concept of the _Fourier_-Qubit. The initial paper can be found at https://www.nature.com/articles/s42005-025-02376-8.
+This is a repository to further develop the concept of the _Fourier_-qubit. The initial paper outlining the concept of _F_-Qubits, [High-dimensional quantum key distribution with Qubit-like states](https://www.nature.com/articles/s42005-025-02376-8) is published in Communications Physics.
