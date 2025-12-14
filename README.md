@@ -1,0 +1,1 @@
+This is a repository to further develop the concept of the _Fourier_-Qubit. The initial paper can be found at https://www.nature.com/articles/s42005-025-02376-8.
