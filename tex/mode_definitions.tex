@@ -1,0 +1,81 @@
+\documentclass[]{article}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\braket}[2]{\left\langle {#1{\left|\vphantom{#1 #2} \right.} #2} \right\rangle}
+
+\newcommand{\T}{\mathcal{T}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\title{Qubit-like states for QKD}
+\author{Lukas Scarfe}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Defining Qubit-like states for use in quantum key distribution in $d$ dimensions.
+\end{abstract}
+
+\section{Logical basis}
+\begin{equation}
+\ket{\psi} = \ket{0}, \ket{1}, ... , \ket{d-1}
+\end{equation}
+
+\section{MUB Basis}
+\begin{equation}
+\ket{\phi_k} = \frac{1}{\sqrt{d}}\sum_{j=0}^{d-1} \omega^{jk} \ket{j},
+\end{equation}
+where $\omega = e^{2\pi i/d}$ and $k\in\{0,1,...,d-1\}$.
+
+\section{PUB $\pm$ Basis}
+\begin{equation}
+\ket{\phi_k^{\pm}} = \frac{1}{\sqrt{2}}\big( \ket{k} \pm \ket{k+1} \big),
+\end{equation}
+where $k\in\{0,2,...,d-2\}$.
+
+\section{PUB Phase Basis}
+\begin{equation}
+\ket{\phi_k^{m}} = \frac{1}{\sqrt{2}}\big( \ket{k} + \omega^{m}\ket{k+1} \big),
+\end{equation}
+where $k\in\{0,2,...,d-2\}$ and $m \in \{0,1,...,d-1\}$.
+
+\section{Nearest Neighbour $\pm$ Basis}
+\begin{equation}
+\ket{\phi_k^{\pm}} = \frac{1}{\sqrt{2}}\big( \ket{k} \pm \ket{k+1} \big),
+\end{equation}
+where $k\in\{0,1,...,d-2\}$.
+
+\section{Nearest Neighbour Phase Basis}
+\begin{equation}
+\ket{\phi_k^{\pm}} = \frac{1}{\sqrt{2}}\big( \ket{k} + \omega^{m}\ket{k+1} \big),
+\end{equation}
+where $k\in\{0,1,...,d-2\}$ and $m \in \{0,1,...,d-1\}$.
+
+\section{\textit{F}-Qubit $\pm$ Basis}
+
+\begin{equation}
+\ket{\phi_{jk}^{\pm}} = \frac{1}{\sqrt{2}} \big(\ket{j} \pm \ket{k}\big),
+\end{equation}
+where ${j \in\{0,1...,d-2\}}$, ${k\in\{1,2,...,d-1\}}$, with ${\: j< k}$.
+
+\section{\textit{F}-Qubit Basis}
+\begin{equation}
+\ket{\phi_{jk}^{m}} = \frac{1}{\sqrt{2}}\big(\ket{k} + \omega^{m}\ket{k}\big),
+\end{equation}
+
+where ${\omega_d= e^{2 \mathrm{\pi i} /d }}$, ${j \in\{0,1...,d-2\}}$, ${k\in\{1,2,...,d-1\}}$, with ${\: j< k}$, and ${m\in\{0,1,...,d-1\}}$.
+
+
+\end{document}
